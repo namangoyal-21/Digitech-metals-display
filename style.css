@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
+header{
+    background-color: blue;
+    color: white;
+    height:100px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 40px;
+}
+p1,p3{
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p2,p4{
+    font-size: 18px;
+}
+main{
+    width:50vw;
+    height:80vh;
+    display:inline-block;
+}
+main1{
+    background-image:url("reverse-repo-rate-explanation2.jpg") ;
+    width:614px;
+    height:600px;
+    display:inline-block;
+    background-repeat: no-repeat;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid rgb(37, 48, 205);
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(197, 191, 191);
+  }
+  .container{
+    background-image:url("RBI-Repo-Rate-History-from-2000-to-8th-June-2023\ \(1\).webp");
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 350px;
+    display:inline-block;
+    margin-left: 20%;
+  }
+  footer{
+    background-color: blue;
+    color: white;
+    height:80px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 20px;
+  }

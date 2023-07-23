@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="refresh" content="300" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Rate Display</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+      background-size: 400% 400%;
+      animation: gradientAnimationBody 10s ease infinite;
+    }
+
+    header {
+      background: linear-gradient(45deg, #d4af37, #c7912b, #be7e20, #b66e18, #af5f10);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      animation: gradientAnimationHeader 4s linear infinite;
+    }
+
+    .chartCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom right, rgba(54, 162, 235, 0.3), rgba(163, 69, 69, 0.3));
+    }
+
+    .chartBox {
+      width: 500px;
+      height: 500px;
+      padding: 25px;
+      border-radius: 20px;
+      border: 3px solid rgba(54, 162, 235, 1);
+      background: #ffffff;
+    }
+
+    .container1 {
+      background-image: url("gold\ display.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 4px solid gold;
+      width: 548px;
+      height: 548px;
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: transparent;
+    }
+
+    .gold-text {
+      background: linear-gradient(45deg, #f9dc5c, #f39614, #e35c1c, #db1a22, #d70b35);
+background-size: 200% 200%;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: gradientAnimation 4s linear infinite;
+    }
+
+    .blink {
+      animation: blink 1s linear infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+
+      80% {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes gradientAnimationHeader {
+      0% {
+        background-position: 0 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    @keyframes gradientAnimationBody {
+      0% {
+        background-position: 0 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .p10 {
+      font-size: 40px;
+
+      animation: blink 1s linear infinite;
+    }
+
+    .p20 {
+      font-size: 40px;
+
+      animation: blink 1s linear infinite;
+
+    }
+
+    .ratesPara1 {
+      padding: 155px 0px 0px 275px;
+    }
+
+    .ratesPara2 {
+      padding: 115px 0px 0px 275px;
+    }
+  </style>
+</head>
+
+<body onclick="openFullscreen();" onload="openFullscreen();" onmouseover="openFullscreen();" oncontextmenu="openFullscreen()" ondrag="select()">
+  <header><b>Gold Rate Display</b></header>
+
+  <div class="chartCard">
+    <div class="chartBox">
+      <canvas height="410px" width="600px" id="myChartGold"></canvas>
+    </div>
+    <div class="container1">
+      <div class="ratesPara1">
+        <p1 class="p10 gold-text" id="currentGold10">50000</p1>
+      </div>
+      <div class="ratesPara2">
+        <p2 class="p20 gold-text" id="currentGold1">5000</p2>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
