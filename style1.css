@@ -31,7 +31,7 @@
 
 #navbar ul{
     display: flex;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 #navbar ul li{ 
@@ -80,14 +80,14 @@
 #home h1{
     color:black;
     text-align: center;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #home p{
     color:black;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #services{
@@ -117,19 +117,19 @@
 }
 
 #services .box p{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Poppins', sans-serif;
 
 } 
 
 /* Utility Classes */
 .h-primary{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3.8rem;
     padding: 12px;
 }
 
 .h-secondary{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.3rem;
     padding: 12px;
 }
