@@ -59,13 +59,13 @@ new Chart(ctx, {
 goldChart();
 
 async function goldData() {
-  const goldUrl = "https://api.metalpriceapi.com/v1/timeframe?api_key=af3cb7595b8f73317e5522660dc6f526&start_date=2023-07-18&end_date=2023-07-22&base=XAU&currencies=INR";
+  const goldUrl = "https://api.metalpriceapi.com/v1/timeframe?api_key=189b3318eed5a5fe9a2eb1df8f2bdb08&start_date=2023-07-18&end_date=2023-07-22&base=XAU&currencies=INR";
 
   const response = await fetch(goldUrl);
   const goldChartData = await response.json();
 
 
-  const goldCurrent = "https://api.metalpriceapi.com/v1/latest?api_key=af3cb7595b8f73317e5522660dc6f526&base=XAU&currencies=INR";
+  const goldCurrent = "https://api.metalpriceapi.com/v1/latest?api_key=189b3318eed5a5fe9a2eb1df8f2bdb08&base=XAU&currencies=INR";
 
   const responseCurrentGold = await fetch(goldCurrent);
   const goldLiveData = await responseCurrentGold.json();
@@ -115,12 +115,12 @@ new Chart(ctx, {
 silverChart();
 
 async function silverData() {
-  const silverUrl = "https://api.metalpriceapi.com/v1/timeframe?api_key=af3cb7595b8f73317e5522660dc6f526&start_date=2023-07-18&end_date=2023-07-22&base=XAG&currencies=INR";
+  const silverUrl = "https://api.metalpriceapi.com/v1/timeframe?api_key=189b3318eed5a5fe9a2eb1df8f2bdb08&start_date=2023-07-18&end_date=2023-07-22&base=XAG&currencies=INR";
 
   const response = await fetch(silverUrl);
   const silverChartData = await response.json();
 
-  const silverCurrent = "https://api.metalpriceapi.com/v1/latest?api_key=af3cb7595b8f73317e5522660dc6f526&base=XAG&currencies=INR";
+  const silverCurrent = "https://api.metalpriceapi.com/v1/latest?api_key=189b3318eed5a5fe9a2eb1df8f2bdb08&base=XAG&currencies=INR";
 
   const responseCurrentSilver = await fetch(silverCurrent);
   const silverLiveData = await responseCurrentSilver.json();
